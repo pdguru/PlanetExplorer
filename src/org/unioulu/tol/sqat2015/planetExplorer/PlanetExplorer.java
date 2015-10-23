@@ -49,16 +49,16 @@ public class PlanetExplorer {
 		return getLocation();
 	}
 
-	private void checkForObstacles(char i) {
+	private void checkForObstacles(char dir) {
 		if(obstacles.contains("("+currentLocation+")")){
 			if(!blocked.contains("("+currentLocation+")")){
 				blocked.concat("("+currentLocation+")");
 			}
-			cantMove(i);
+			cantMove(dir);
 		}
 	}
 
-	private void cantMove(char i) {
+	private void cantMove(char dir) {
 		switch (instrForThisMove) {
 		case 'f': move('b'); break;
 		case 'b': move('f'); break;
