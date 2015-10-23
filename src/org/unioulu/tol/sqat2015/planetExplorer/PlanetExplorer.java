@@ -42,8 +42,8 @@ public class PlanetExplorer {
 			checkForObstacles();
 		}
 		
-		if(blocked!=null) return currentLocation+blocked;
-		return currentLocation;
+		if(blocked!=null) return getLocation()+blocked;
+		return getLocation();
 	}
 
 	private void checkForObstacles() {
