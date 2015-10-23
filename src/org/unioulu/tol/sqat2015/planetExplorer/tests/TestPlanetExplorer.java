@@ -21,7 +21,7 @@ public class TestPlanetExplorer {
 	
 	@Test
 	public void testExplorerMoveFwd(){
-		assertEquals("(0,0,N)", explorer.executeCommand("f"));
+		assertEquals("(1,0,N)", explorer.executeCommand("f"));
 	}
 	
 	@Test
