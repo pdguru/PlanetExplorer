@@ -47,3 +47,4 @@ RefactoringAction 1445591542115 TestPlanetExplorer.java RENAME testExplorer=>voi
 RefactoringAction 1445591544126 TestPlanetExplorer.java RENAME testExplorerMove=>void testExplorerMoveFwd FIELD
 RefactoringAction 1445591545640 TestPlanetExplorer.java RENAME testExplorerMoveFwd=>void testExplorerMoveFwd() METHOD
 EditAction 1445591667239 TestPlanetExplorer.java 582 3 3 2
+EditAction 1445591667340 PlanetExplorer.java 2819 5 10 0
