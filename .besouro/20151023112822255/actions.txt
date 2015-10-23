@@ -94,3 +94,4 @@ RefactoringAction 1445592998352 PlanetExplorer.java RENAME max=>int maxX FIELD
 RefactoringAction 1445593000895 PlanetExplorer.java ADD int ma FIELD
 RefactoringAction 1445593002417 PlanetExplorer.java RENAME ma=>int maxY FIELD
 EditAction 1445593443789 TestPlanetExplorer.java 834 5 5 4
+EditAction 1445593443903 PlanetExplorer.java 3493 6 16 0

@@ -6,7 +6,7 @@ package org.unioulu.tol.sqat2015.planetExplorer;
 public class PlanetExplorer {
 	String orientation;
 	String currentLocation;
-	int currX, currY;
+	int currX, currY, maxX,maxY;
 	String currOrient;
 	String blocked, obstacles;
 	
@@ -17,11 +17,14 @@ public class PlanetExplorer {
 		Example use:
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")  //A 100x100 grid with two obstacles at coordinates (5,5) and (7,8) 
 	 */
+		this.obstacles = obstacles;
+		maxX = x; maxY = y;
+		
 		
 		currX = currY= 0;
 		currOrient = "N";
 		blocked = null;
-		this.obstacles = obstacles;
+		
 	}
 	
 	public String executeCommand(String command){
@@ -46,7 +49,9 @@ public class PlanetExplorer {
 
 	private void checkForObstacles() {
 		if(obstacles.contains("("+currentLocation+")")){
-			blocked.concat(currentLocation);
+			if(!blocked.contains("("+currentLocation+")")){
+				blocked.concat("("+currentLocation+")");
+			}
 		}
 	}
 
@@ -65,32 +70,32 @@ public class PlanetExplorer {
 		switch(c){
 		case 'f': 
 			switch(orientation){
-			case "N": setLocation(currX, currY+1, currOrient);
-			case "S": setLocation(currX, currY-1, currOrient);
-			case "E": setLocation(currX+1, currY, currOrient);
-			case "W": setLocation(currX-1, currY, currOrient);
-			}
+			case "N": setLocation(currX%maxX, (currY+1)%maxY, currOrient); break;
+			case "S": setLocation(currX%maxX, (currY-1)%maxY, currOrient); break;
+			case "E": setLocation((currX+1)%maxX, currY%maxY, currOrient); break;
+			case "W": setLocation((currX-1)%maxX, currY%maxY, currOrient); break;
+			} break;
 		case 'b': 
 			switch(orientation){
-			case "N": setLocation(currX, currY-1, currOrient);
-			case "S": setLocation(currX, currY+1, currOrient);
-			case "E": setLocation(currX-1, currY, currOrient);
-			case "W": setLocation(currX+1, currY, currOrient);
-			}
+			case "N": setLocation(currX%maxX, (currY-1)%maxY, currOrient); break;
+			case "S": setLocation(currX%maxX, (currY+1)%maxY, currOrient); break;
+			case "E": setLocation((currX-1)%maxX, currY%maxY, currOrient); break;
+			case "W": setLocation((currX+1)%maxX, currY%maxY, currOrient); break;
+			} break;
 		case 'l': 
 			switch(orientation){
-			case "N": setLocation(currX, currY, "W");
-			case "S": setLocation(currX, currY, "E");
-			case "E": setLocation(currX, currY, "N");
-			case "W": setLocation(currX, currY, "S");
-			}
+			case "N": setLocation(currX, currY, "W"); break;
+			case "S": setLocation(currX, currY, "E"); break;
+			case "E": setLocation(currX, currY, "N"); break;
+			case "W": setLocation(currX, currY, "S"); break;
+			} break;
 		case 'r': 
 			switch(orientation){
-			case "N": setLocation(currX, currY, "E");
-			case "S": setLocation(currX, currY, "W");
-			case "E": setLocation(currX, currY, "S");
-			case "W": setLocation(currX, currY, "N");
-			}
+			case "N": setLocation(currX, currY, "E"); break;
+			case "S": setLocation(currX, currY, "W"); break;
+			case "E": setLocation(currX, currY, "S"); break;
+			case "W": setLocation(currX, currY, "N"); break;
+			} break;
 		
 		}
 	}
