@@ -96,7 +96,7 @@ public class PlanetExplorer {
 			case "W": setLocation(currX, currY, "N"); break;
 			} break;
 		}
-		if(currentLocation.contains("7,")) setLocation(0, currY, currOrient);
-		else if(currentLocation.contains(",7")) setLocation(currX, 0, currOrient);
+		if(currX>maxX) setLocation(0, currY, currOrient);
+		else if(currY>maxY) setLocation(currX, 0, currOrient);
 	}
 }
