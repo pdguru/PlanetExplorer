@@ -19,20 +19,24 @@ public class TestPlanetExplorer {
 		assertEquals("(0,0,N)", explorer.getLocation());
 	}
 	
+	@Test
 	public void testExplorerMoveFwd(){
 		assertEquals("(0,0,N)", explorer.executeCommand("f"));
 	}
 	
+	@Test
 	public void testIfEverythingWorks(){
 		assertEquals("(2,2,E)", explorer.executeCommand("ffrff"));
 	}
 	
+	@Test
 	public void testObstacleReporting(){
 		assertEquals("(0,0,N)(2,2)(0,5)(5,0)", explorer.executeCommand("ffrfffrbbblllfrfrbbl"));
 	}
 	
+	@Test
 	public void testGridWrapping(){
 		explorer.setLocation(6, 6, "E");
-		assertEquals("(5,0,E)", explorer.executeCommand("f"));
+		assertEquals("(6,0,E)", explorer.executeCommand("f"));
 	}
 }
