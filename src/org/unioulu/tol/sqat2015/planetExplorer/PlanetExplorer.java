@@ -4,7 +4,6 @@ package org.unioulu.tol.sqat2015.planetExplorer;
 // ID: 143
 // Finish time:
 public class PlanetExplorer {
-	String orientation;
 	String currentLocation;
 	int currX, currY, maxX,maxY;
 	String currOrient;
@@ -69,28 +68,28 @@ public class PlanetExplorer {
 	public void move(char c){
 		switch(c){
 		case 'f': 
-			switch(orientation){
+			switch(currOrient){
 			case "N": setLocation(currX%maxX, (currY+1)%maxY, currOrient); break;
 			case "S": setLocation(currX%maxX, (currY-1)%maxY, currOrient); break;
 			case "E": setLocation((currX+1)%maxX, currY%maxY, currOrient); break;
 			case "W": setLocation((currX-1)%maxX, currY%maxY, currOrient); break;
 			} break;
 		case 'b': 
-			switch(orientation){
+			switch(currOrient){
 			case "N": setLocation(currX%maxX, (currY-1)%maxY, currOrient); break;
 			case "S": setLocation(currX%maxX, (currY+1)%maxY, currOrient); break;
 			case "E": setLocation((currX-1)%maxX, currY%maxY, currOrient); break;
 			case "W": setLocation((currX+1)%maxX, currY%maxY, currOrient); break;
 			} break;
 		case 'l': 
-			switch(orientation){
+			switch(currOrient){
 			case "N": setLocation(currX, currY, "W"); break;
 			case "S": setLocation(currX, currY, "E"); break;
 			case "E": setLocation(currX, currY, "N"); break;
 			case "W": setLocation(currX, currY, "S"); break;
 			} break;
 		case 'r': 
-			switch(orientation){
+			switch(currOrient){
 			case "N": setLocation(currX, currY, "E"); break;
 			case "S": setLocation(currX, currY, "W"); break;
 			case "E": setLocation(currX, currY, "S"); break;

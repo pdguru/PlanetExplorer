@@ -112,3 +112,7 @@ EditAction 1445593687756 TestPlanetExplorer.java 995 6 7 5
 UnitTestCaseAction 1445593688064 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1445593688064 TestPlanetExplorer FAIL
 EditAction 1445593704311 TestPlanetExplorer.java 995 6 7 5
+UnitTestCaseAction 1445593704615 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1445593704616 TestPlanetExplorer FAIL
+RefactoringAction 1445593760384 PlanetExplorer.java REMOVE orientation FIELD
+EditAction 1445593780210 PlanetExplorer.java 3467 6 16 0
