@@ -7,3 +7,13 @@ RefactoringAction 1445589866409 TestPlanetExplorer.java RENAME test()=>void test
 RefactoringAction 1445589868424 TestPlanetExplorer.java RENAME testExplorer()=>void testExplorerJust() METHOD
 RefactoringAction 1445589871440 TestPlanetExplorer.java RENAME testExplorerJust()=>void testExplorerJustLanded() METHOD
 EditAction 1445589882734 PlanetExplorer.java 1346 2 1 0
+RefactoringAction 1445589950061 TestPlanetExplorer.java ADD import org.unioulu.tol.sqat2015.planetExplorer.PlanetExplorer IMPORT
+RefactoringAction 1445589956611 TestPlanetExplorer.java ADD PlanetExplorer explorer FIELD
+RefactoringAction 1445589962642 TestPlanetExplorer.java REMOVE explorer FIELD
+RefactoringAction 1445589964157 TestPlanetExplorer.java ADD PlanetExplorer explorer FIELD
+RefactoringAction 1445589969133 TestPlanetExplorer.java ADD import org.junit.Before IMPORT
+FileOpenedAction 1445589986062 TestBowlingScoreCalculator.java 1515 6 21 10
+RefactoringAction 1445589998749 TestPlanetExplorer.java ADD void setup() METHOD
+FileOpenedAction 1445590384691 TestBowlingScoreCalculator.java 1515 6 21 10
+RefactoringAction 1445590443227 PlanetExplorer.java ADD Object getLocation() METHOD
+EditAction 1445590487856 TestPlanetExplorer.java 480 2 2 1
