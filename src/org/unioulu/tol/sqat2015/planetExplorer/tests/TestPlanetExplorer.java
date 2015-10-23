@@ -22,4 +22,8 @@ public class TestPlanetExplorer {
 	public void testExplorerMoveFwd(){
 		assertEquals("(0,0,N)", explorer.executeCommand("f"));
 	}
+	
+	public void testIfEverythingWorks(){
+		assertEquals("(2,2,E)", explorer.executeCommand("ffrff"));
+	}
 }
