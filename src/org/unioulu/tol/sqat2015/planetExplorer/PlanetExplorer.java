@@ -37,7 +37,7 @@ public class PlanetExplorer {
 	}
 
 	public String getLocation() {
-		currentLocation = currX+currY+currOrient;
+		currentLocation = currX+","+currY+","+currOrient;
 		currentLocation = "("+currentLocation+")";
 		return currentLocation;
 	}
