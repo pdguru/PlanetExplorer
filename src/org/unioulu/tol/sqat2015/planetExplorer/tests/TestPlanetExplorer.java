@@ -37,6 +37,6 @@ public class TestPlanetExplorer {
 	@Test
 	public void testGridWrapping(){
 		explorer.setLocation(6, 6, "E");
-		assertEquals("(6,0,E)", explorer.executeCommand("f"));
+		assertEquals("(0,6,E)", explorer.executeCommand("f"));
 	}
 }
