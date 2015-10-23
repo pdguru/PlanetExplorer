@@ -27,4 +27,8 @@ public class PlanetExplorer {
 		
 		return null;
 	}
+
+	public String getLocation() {
+		return "(0,0,N)";
+	}
 }

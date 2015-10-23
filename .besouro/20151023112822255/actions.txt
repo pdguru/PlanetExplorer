@@ -17,3 +17,4 @@ RefactoringAction 1445589998749 TestPlanetExplorer.java ADD void setup() METHOD
 FileOpenedAction 1445590384691 TestBowlingScoreCalculator.java 1515 6 21 10
 RefactoringAction 1445590443227 PlanetExplorer.java ADD Object getLocation() METHOD
 EditAction 1445590487856 TestPlanetExplorer.java 480 2 2 1
+EditAction 1445590487941 PlanetExplorer.java 1405 3 2 0
