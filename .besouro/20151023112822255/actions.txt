@@ -135,3 +135,17 @@ EditAction 1445594471954 PlanetExplorer.java 3474 6 17 0
 UnitTestCaseAction 1445594472287 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1445594472288 TestPlanetExplorer FAIL
 EditAction 1445594500095 TestPlanetExplorer.java 995 6 7 5
+UnitTestCaseAction 1445594500404 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1445594500405 TestPlanetExplorer FAIL
+RefactoringAction 1445594786110 PlanetExplorer.java ADD void cantMove() METHOD
+RefactoringAction 1445594787129 PlanetExplorer.java REMOVE cantMove() METHOD
+RefactoringAction 1445594834736 PlanetExplorer.java RENAME checkForObstacles()=>void checkForObstacles(char) METHOD
+RefactoringAction 1445594844543 PlanetExplorer.java ADD void cantMove(char) METHOD
+RefactoringAction 1445594915977 PlanetExplorer.java ADD char ne FIELD
+RefactoringAction 1445594917996 PlanetExplorer.java RENAME ne=>char nextmove FIELD
+RefactoringAction 1445594919515 PlanetExplorer.java RENAME nextmove=>char next FIELD
+RefactoringAction 1445594924034 PlanetExplorer.java RENAME next=>char nextMove FIELD
+RefactoringAction 1445594936073 PlanetExplorer.java RENAME nextMove=>char instr FIELD
+RefactoringAction 1445594938595 PlanetExplorer.java RENAME instr=>char instrFor FIELD
+RefactoringAction 1445594941115 PlanetExplorer.java RENAME instrFor=>char instrForThisMove FIELD
+EditAction 1445595078908 PlanetExplorer.java 3782 7 18 0

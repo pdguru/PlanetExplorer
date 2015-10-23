@@ -9,6 +9,8 @@ public class PlanetExplorer {
 	String currOrient;
 	String blocked, obstacles;
 	
+	char instrForThisMove;
+	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
 	 *  Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
@@ -38,19 +40,30 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		for(int i=0; i<command.length();i++){
-			move(command.charAt(i));
-			checkForObstacles();
+			instrForThisMove = command.charAt(i);
+			move(instrForThisMove);
+			checkForObstacles(instrForThisMove);
 		}
 		
 		if(blocked!=null) return getLocation()+blocked;
 		return getLocation();
 	}
 
-	private void checkForObstacles() {
+	private void checkForObstacles(char i) {
 		if(obstacles.contains("("+currentLocation+")")){
 			if(!blocked.contains("("+currentLocation+")")){
 				blocked.concat("("+currentLocation+")");
 			}
+			cantMove(i);
+		}
+	}
+
+	private void cantMove(char i) {
+		switch (instrForThisMove) {
+		case 'f': move('b'); break;
+		case 'b': move('f'); break;
+		case 'r': move('l'); break;
+		case 'l': move('r'); break;
 		}
 	}
 
