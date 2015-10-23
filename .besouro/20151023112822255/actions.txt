@@ -87,3 +87,10 @@ EditAction 1445592619591 PlanetExplorer.java 3148 6 14 0
 UnitTestCaseAction 1445592619924 TestPlanetExplorer.java OK
 UnitTestSessionAction 1445592619924 TestPlanetExplorer OK
 EditAction 1445592689717 TestPlanetExplorer.java 828 5 5 4
+UnitTestCaseAction 1445592690024 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445592690025 TestPlanetExplorer OK
+RefactoringAction 1445592997330 PlanetExplorer.java ADD int max FIELD
+RefactoringAction 1445592998352 PlanetExplorer.java RENAME max=>int maxX FIELD
+RefactoringAction 1445593000895 PlanetExplorer.java ADD int ma FIELD
+RefactoringAction 1445593002417 PlanetExplorer.java RENAME ma=>int maxY FIELD
+EditAction 1445593443789 TestPlanetExplorer.java 834 5 5 4

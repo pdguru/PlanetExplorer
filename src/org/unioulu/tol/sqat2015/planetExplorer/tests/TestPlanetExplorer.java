@@ -30,4 +30,6 @@ public class TestPlanetExplorer {
 	public void testObstacleReporting(){
 		assertEquals("(0,0,N)(2,2)(0,5)(5,0)", explorer.executeCommand("ffrfffrbbblllfrfrbbl"));
 	}
+	
+	
 }
