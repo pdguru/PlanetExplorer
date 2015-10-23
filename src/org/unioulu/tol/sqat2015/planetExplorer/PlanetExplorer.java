@@ -8,6 +8,7 @@ public class PlanetExplorer {
 	String currentLocation;
 	int currX, currY;
 	String currOrient;
+	String obstacles;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
@@ -19,6 +20,7 @@ public class PlanetExplorer {
 		
 		currX = currY= 0;
 		currOrient = "N";
+		obstacles = null;
 	}
 	
 	public String executeCommand(String command){
@@ -36,6 +38,7 @@ public class PlanetExplorer {
 			move(command.charAt(i));
 		}
 		
+		if(obstacles!=null) return currentLocation+obstacles;
 		return currentLocation;
 	}
 
