@@ -31,5 +31,8 @@ public class TestPlanetExplorer {
 		assertEquals("(0,0,N)(2,2)(0,5)(5,0)", explorer.executeCommand("ffrfffrbbblllfrfrbbl"));
 	}
 	
-	
+	public void testGridWrapping(){
+		explorer.setLocation(6, 6, "E");
+		assertEquals("(6,0,E)", explorer.executeCommand("f"));
+	}
 }

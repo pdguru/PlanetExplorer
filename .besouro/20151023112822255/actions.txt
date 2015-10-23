@@ -95,3 +95,11 @@ RefactoringAction 1445593000895 PlanetExplorer.java ADD int ma FIELD
 RefactoringAction 1445593002417 PlanetExplorer.java RENAME ma=>int maxY FIELD
 EditAction 1445593443789 TestPlanetExplorer.java 834 5 5 4
 EditAction 1445593443903 PlanetExplorer.java 3493 6 16 0
+UnitTestCaseAction 1445593444993 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445593444994 TestPlanetExplorer OK
+RefactoringAction 1445593454255 TestPlanetExplorer.java ADD void test FIELD
+RefactoringAction 1445593457266 TestPlanetExplorer.java RENAME test=>void testWrap FIELD
+RefactoringAction 1445593460779 TestPlanetExplorer.java RENAME testWrap=>void test FIELD
+RefactoringAction 1445593464292 TestPlanetExplorer.java RENAME test=>void testGridWrapping FIELD
+RefactoringAction 1445593466304 TestPlanetExplorer.java RENAME testGridWrapping=>void testGridWrapping() METHOD
+EditAction 1445593563425 TestPlanetExplorer.java 963 6 7 5
