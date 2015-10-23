@@ -24,7 +24,7 @@ public class TestPlanetExplorer {
 		assertEquals("(1,0,N)", explorer.executeCommand("f"));
 	}
 	
-	@Test
+	
 	public void testIfEverythingWorks(){
 		assertEquals("(2,2,E)", explorer.executeCommand("ffrff"));
 	}
