@@ -2,3 +2,8 @@ FileOpenedAction 1445588902517 TestPlanetExplorer.java 228 1 1 0
 FileOpenedAction 1445588907301 PlanetExplorer.java 1342 2 1 0
 EditAction 1445589032192 PlanetExplorer.java 1350 2 1 0
 EditAction 1445589113794 PlanetExplorer.java 1343 2 1 0
+RefactoringAction 1445589860877 TestPlanetExplorer.java RENAME test()=>void test FIELD
+RefactoringAction 1445589866409 TestPlanetExplorer.java RENAME test()=>void testExplorer() METHOD
+RefactoringAction 1445589868424 TestPlanetExplorer.java RENAME testExplorer()=>void testExplorerJust() METHOD
+RefactoringAction 1445589871440 TestPlanetExplorer.java RENAME testExplorerJust()=>void testExplorerJustLanded() METHOD
+EditAction 1445589882734 PlanetExplorer.java 1346 2 1 0
