@@ -149,3 +149,6 @@ RefactoringAction 1445594936073 PlanetExplorer.java RENAME nextMove=>char instr 
 RefactoringAction 1445594938595 PlanetExplorer.java RENAME instr=>char instrFor FIELD
 RefactoringAction 1445594941115 PlanetExplorer.java RENAME instrFor=>char instrForThisMove FIELD
 EditAction 1445595078908 PlanetExplorer.java 3782 7 18 0
+UnitTestCaseAction 1445595079255 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1445595079256 TestPlanetExplorer FAIL
+EditAction 1445595146044 TestPlanetExplorer.java 997 6 7 5
