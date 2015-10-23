@@ -69,17 +69,17 @@ public class PlanetExplorer {
 		switch(c){
 		case 'f': 
 			switch(currOrient){
-			case "N": setLocation(currX%maxX, (currY+1)%maxY, currOrient); break;
-			case "S": setLocation(currX%maxX, (currY-1)%maxY, currOrient); break;
-			case "E": setLocation((currX+1)%maxX, currY%maxY, currOrient); break;
-			case "W": setLocation((currX-1)%maxX, currY%maxY, currOrient); break;
+			case "N": setLocation(currX, currY+1, currOrient); break;
+			case "S": setLocation(currX, currY-1, currOrient); break;
+			case "E": setLocation(currX+1, currY, currOrient); break;
+			case "W": setLocation(currX-1, currY, currOrient); break;
 			} break;
 		case 'b': 
 			switch(currOrient){
-			case "N": setLocation(currX%maxX, (currY-1)%maxY, currOrient); break;
-			case "S": setLocation(currX%maxX, (currY+1)%maxY, currOrient); break;
-			case "E": setLocation((currX-1)%maxX, currY%maxY, currOrient); break;
-			case "W": setLocation((currX+1)%maxX, currY%maxY, currOrient); break;
+			case "N": setLocation(currX, currY-1, currOrient); break;
+			case "S": setLocation(currX, currY+1, currOrient); break;
+			case "E": setLocation(currX-1, currY, currOrient); break;
+			case "W": setLocation(currX+1, currY, currOrient); break;
 			} break;
 		case 'l': 
 			switch(currOrient){
@@ -95,7 +95,8 @@ public class PlanetExplorer {
 			case "E": setLocation(currX, currY, "S"); break;
 			case "W": setLocation(currX, currY, "N"); break;
 			} break;
-		
 		}
+		if(currentLocation.contains("7,")) setLocation(0, currY, currOrient);
+		else if(currentLocation.contains(",7")) setLocation(currX, 0, currOrient);
 	}
 }
