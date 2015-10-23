@@ -103,3 +103,6 @@ RefactoringAction 1445593460779 TestPlanetExplorer.java RENAME testWrap=>void te
 RefactoringAction 1445593464292 TestPlanetExplorer.java RENAME test=>void testGridWrapping FIELD
 RefactoringAction 1445593466304 TestPlanetExplorer.java RENAME testGridWrapping=>void testGridWrapping() METHOD
 EditAction 1445593563425 TestPlanetExplorer.java 963 6 7 5
+UnitTestCaseAction 1445593563725 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445593563725 TestPlanetExplorer OK
+EditAction 1445593612340 TestPlanetExplorer.java 963 6 7 5
