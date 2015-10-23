@@ -24,7 +24,7 @@ public class PlanetExplorer {
 		
 		currX = currY= 0;
 		currOrient = "N";
-		blocked = null;
+		blocked = "";
 		
 	}
 	
@@ -45,7 +45,7 @@ public class PlanetExplorer {
 			checkForObstacles(instrForThisMove);
 		}
 		
-		if(blocked!=null) return getLocation()+blocked;
+		if(blocked.equals("")) return getLocation()+blocked;
 		return getLocation();
 	}
 
