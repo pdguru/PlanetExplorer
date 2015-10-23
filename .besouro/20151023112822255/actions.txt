@@ -18,3 +18,32 @@ FileOpenedAction 1445590384691 TestBowlingScoreCalculator.java 1515 6 21 10
 RefactoringAction 1445590443227 PlanetExplorer.java ADD Object getLocation() METHOD
 EditAction 1445590487856 TestPlanetExplorer.java 480 2 2 1
 EditAction 1445590487941 PlanetExplorer.java 1405 3 2 0
+UnitTestCaseAction 1445590488500 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445590488502 TestPlanetExplorer OK
+RefactoringAction 1445590536815 PlanetExplorer.java ADD void move FIELD
+RefactoringAction 1445590541828 PlanetExplorer.java RENAME move=>void move() METHOD
+RefactoringAction 1445590545857 PlanetExplorer.java RENAME move()=>void move(String) METHOD
+RefactoringAction 1445590547872 PlanetExplorer.java RENAME move(String)=>void move() METHOD
+RefactoringAction 1445590560125 PlanetExplorer.java RENAME move()=>void move(String) METHOD
+RefactoringAction 1445590694574 PlanetExplorer.java ADD String or FIELD
+RefactoringAction 1445590698089 PlanetExplorer.java RENAME or=>String orientation FIELD
+RefactoringAction 1445590832134 PlanetExplorer.java ADD void set FIELD
+RefactoringAction 1445590834148 PlanetExplorer.java RENAME set=>void setLocation FIELD
+RefactoringAction 1445590835162 PlanetExplorer.java RENAME setLocation=>void setLocation() METHOD
+RefactoringAction 1445590861261 PlanetExplorer.java RENAME setLocation()=>void setLocation(int) METHOD
+RefactoringAction 1445590866303 PlanetExplorer.java RENAME setLocation(int)=>void setLocation(int, int) METHOD
+RefactoringAction 1445590869316 PlanetExplorer.java RENAME setLocation(int, int)=>void setLocation(int, int, String) METHOD
+RefactoringAction 1445590898874 PlanetExplorer.java ADD String currentLocatio FIELD
+RefactoringAction 1445590899889 PlanetExplorer.java RENAME currentLocatio=>String currentLocation FIELD
+RefactoringAction 1445591053451 PlanetExplorer.java ADD int curr FIELD
+RefactoringAction 1445591054466 PlanetExplorer.java RENAME curr=>int currX FIELD
+RefactoringAction 1445591058512 PlanetExplorer.java ADD int currY FIELD
+RefactoringAction 1445591067558 PlanetExplorer.java ADD String currOre FIELD
+RefactoringAction 1445591069574 PlanetExplorer.java RENAME currOre=>String currOrient FIELD
+RefactoringAction 1445591533079 TestPlanetExplorer.java ADD void test FIELD
+RefactoringAction 1445591535591 TestPlanetExplorer.java RENAME test=>void testExplo FIELD
+RefactoringAction 1445591538603 TestPlanetExplorer.java RENAME testExplo=>void testExplorer FIELD
+RefactoringAction 1445591542115 TestPlanetExplorer.java RENAME testExplorer=>void testExplorerMove FIELD
+RefactoringAction 1445591544126 TestPlanetExplorer.java RENAME testExplorerMove=>void testExplorerMoveFwd FIELD
+RefactoringAction 1445591545640 TestPlanetExplorer.java RENAME testExplorerMoveFwd=>void testExplorerMoveFwd() METHOD
+EditAction 1445591667239 TestPlanetExplorer.java 582 3 3 2

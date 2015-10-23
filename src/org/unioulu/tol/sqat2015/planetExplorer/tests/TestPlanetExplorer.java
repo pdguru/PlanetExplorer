@@ -18,4 +18,8 @@ public class TestPlanetExplorer {
 	public void testExplorerJustLanded() {
 		assertEquals("(0,0,N)", explorer.getLocation());
 	}
+	
+	public void testExplorerMoveFwd(){
+		assertEquals("(0,0,N)", explorer.executeCommand("f"));
+	}
 }
