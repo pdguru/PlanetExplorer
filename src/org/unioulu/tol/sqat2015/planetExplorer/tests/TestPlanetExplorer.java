@@ -26,4 +26,8 @@ public class TestPlanetExplorer {
 	public void testIfEverythingWorks(){
 		assertEquals("(2,2,E)", explorer.executeCommand("ffrff"));
 	}
+	
+	public void testObstacleReporting(){
+		
+	}
 }

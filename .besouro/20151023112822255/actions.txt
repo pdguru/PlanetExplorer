@@ -63,3 +63,15 @@ RefactoringAction 1445592009629 TestPlanetExplorer.java RENAME testI=>void testI
 RefactoringAction 1445592015647 TestPlanetExplorer.java RENAME testIF=>void testIfEverythingWork FIELD
 RefactoringAction 1445592017158 TestPlanetExplorer.java RENAME testIfEverythingWork=>void testIfEverythingWorks() METHOD
 EditAction 1445592081031 TestPlanetExplorer.java 690 4 4 3
+UnitTestCaseAction 1445592081359 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445592081359 TestPlanetExplorer OK
+RefactoringAction 1445592106423 TestPlanetExplorer.java ADD void test FIELD
+RefactoringAction 1445592107436 TestPlanetExplorer.java RENAME test=>void testIf FIELD
+RefactoringAction 1445592111457 TestPlanetExplorer.java RENAME testIf=>void testOb FIELD
+RefactoringAction 1445592113469 TestPlanetExplorer.java RENAME testOb=>void testObstacle FIELD
+RefactoringAction 1445592116982 TestPlanetExplorer.java RENAME testObstacle=>void testObstacleReporting FIELD
+RefactoringAction 1445592119495 TestPlanetExplorer.java RENAME testObstacleReporting=>void testObstacleReporting() METHOD
+RefactoringAction 1445592246105 PlanetExplorer.java ADD String ob FIELD
+RefactoringAction 1445592247126 PlanetExplorer.java RENAME ob=>String obs FIELD
+RefactoringAction 1445592248643 PlanetExplorer.java RENAME obs=>String obstacles FIELD
+EditAction 1445592274909 TestPlanetExplorer.java 740 5 4 3
