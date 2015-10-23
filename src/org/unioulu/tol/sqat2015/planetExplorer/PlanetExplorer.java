@@ -8,7 +8,7 @@ public class PlanetExplorer {
 	String currentLocation;
 	int currX, currY;
 	String currOrient;
-	String obstacles;
+	String blocked, obstacles;
 	
 	public PlanetExplorer(int x, int y, String obstacles){
 	/*	x and y represent the size of the grid.
@@ -20,7 +20,8 @@ public class PlanetExplorer {
 		
 		currX = currY= 0;
 		currOrient = "N";
-		obstacles = null;
+		blocked = null;
+		this.obstacles = obstacles;
 	}
 	
 	public String executeCommand(String command){
@@ -36,16 +37,23 @@ public class PlanetExplorer {
 		 */
 		for(int i=0; i<command.length();i++){
 			move(command.charAt(i));
+			checkForObstacles();
 		}
 		
-		if(obstacles!=null) return currentLocation+obstacles;
+		if(blocked!=null) return currentLocation+blocked;
 		return currentLocation;
 	}
 
+	private void checkForObstacles() {
+		if(obstacles.contains("("+currentLocation+")")){
+			blocked.concat(currentLocation);
+		}
+	}
+
 	public String getLocation() {
-		currentLocation = currX+","+currY+","+currOrient;
-		currentLocation = "("+currentLocation+")";
-		return currentLocation;
+		currentLocation = currX+","+currY;
+		return "("+currentLocation+","+currOrient+")";
+
 	}
 	
 	public void setLocation(int x,int y,String orient){

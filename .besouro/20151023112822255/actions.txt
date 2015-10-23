@@ -76,3 +76,11 @@ RefactoringAction 1445592247126 PlanetExplorer.java RENAME ob=>String obs FIELD
 RefactoringAction 1445592248643 PlanetExplorer.java RENAME obs=>String obstacles FIELD
 EditAction 1445592274909 TestPlanetExplorer.java 740 5 4 3
 EditAction 1445592274997 PlanetExplorer.java 2988 5 13 0
+UnitTestCaseAction 1445592275326 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445592275327 TestPlanetExplorer OK
+RefactoringAction 1445592320974 PlanetExplorer.java ADD void checkForObstacles() METHOD
+RefactoringAction 1445592321995 PlanetExplorer.java REMOVE checkForObstacles() METHOD
+RefactoringAction 1445592331063 PlanetExplorer.java ADD void checkForObstacles() METHOD
+RefactoringAction 1445592375224 PlanetExplorer.java RENAME obstacles=>String blocked FIELD
+RefactoringAction 1445592405936 PlanetExplorer.java ADD String obstacles FIELD
+EditAction 1445592619591 PlanetExplorer.java 3148 6 14 0
