@@ -51,3 +51,7 @@ EditAction 1445591667340 PlanetExplorer.java 2819 5 10 0
 UnitTestCaseAction 1445591668439 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1445591668440 TestPlanetExplorer FAIL
 EditAction 1445591787031 PlanetExplorer.java 2827 5 10 0
+UnitTestCaseAction 1445591787351 TestPlanetExplorer.java OK
+UnitTestSessionAction 1445591787351 TestPlanetExplorer OK
+RefactoringAction 1445591929651 PlanetExplorer.java RENAME move(String)=>void move(char) METHOD
+EditAction 1445591980924 PlanetExplorer.java 2890 5 11 0

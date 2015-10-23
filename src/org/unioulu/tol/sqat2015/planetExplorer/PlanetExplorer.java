@@ -32,8 +32,11 @@ public class PlanetExplorer {
 		 * Where pos_x and pos_y are the final coordinates, facing is the current direction the explorer is pointing to (N,S,W,E).
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
+		for(int i=0; i<command.length();i++){
+			move(command.charAt(i));
+		}
 		
-		return "(0,0,N)";
+		return currentLocation;
 	}
 
 	public String getLocation() {
@@ -47,30 +50,30 @@ public class PlanetExplorer {
 		currOrient = orient;
 	}
 	
-	public void move(String direction){
-		switch(direction){
-		case "f": 
+	public void move(char c){
+		switch(c){
+		case 'f': 
 			switch(orientation){
 			case "N": setLocation(currX, currY+1, currOrient);
 			case "S": setLocation(currX, currY-1, currOrient);
 			case "E": setLocation(currX+1, currY, currOrient);
 			case "W": setLocation(currX-1, currY, currOrient);
 			}
-		case "b": 
+		case 'b': 
 			switch(orientation){
 			case "N": setLocation(currX, currY-1, currOrient);
 			case "S": setLocation(currX, currY+1, currOrient);
 			case "E": setLocation(currX-1, currY, currOrient);
 			case "W": setLocation(currX+1, currY, currOrient);
 			}
-		case "l": 
+		case 'l': 
 			switch(orientation){
 			case "N": setLocation(currX, currY, "W");
 			case "S": setLocation(currX, currY, "E");
 			case "E": setLocation(currX, currY, "N");
 			case "W": setLocation(currX, currY, "S");
 			}
-		case "r": 
+		case 'r': 
 			switch(orientation){
 			case "N": setLocation(currX, currY, "E");
 			case "S": setLocation(currX, currY, "W");
